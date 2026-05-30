@@ -208,7 +208,7 @@ Insight:
 - systemctl controls service lifecycle
 
 ---
-🔥 7. FIREWALL (UFW)
+##🔥  FIREWALL (UFW)
 🔍 Check firewall status
 sudo ufw status
 🔓 Allow SSH
@@ -219,7 +219,7 @@ sudo ufw enable
 
 Blocks unauthorized network access.
 
-📡 8. WIRESHARK / NETWORK TRAFFIC
+##📡 WIRESHARK / NETWORK TRAFFIC
 🌐 Generate traffic
 ping -c 4 google.com
 ✔ Purpose:
