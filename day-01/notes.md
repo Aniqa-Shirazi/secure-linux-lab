@@ -94,7 +94,7 @@ This is a basic form of service exposure verification used in security auditing.
 
 ---
 
-## 🔥 Firewall Awareness
+##  🔥 Firewall Awareness
 
 ### Commands Used
 - sudo ufw status
@@ -208,25 +208,25 @@ Insight:
 - systemctl controls service lifecycle
 
 ---
-##🔥  FIREWALL (UFW)
-🔍 Check firewall status
+## 🔥  FIREWALL (UFW)
+### 🔍 Check firewall status
 sudo ufw status
-🔓 Allow SSH
+### 🔓 Allow SSH
 sudo ufw allow ssh
-🔥 Enable firewall
+### 🔥 Enable firewall
 sudo ufw enable
 🔐 Security relevance:
 
 Blocks unauthorized network access.
 
-##📡 WIRESHARK / NETWORK TRAFFIC
-🌐 Generate traffic
+## 📡 WIRESHARK / NETWORK TRAFFIC
+### 🌐 Generate traffic
 ping -c 4 google.com
 ✔ Purpose:
 
 Creates ICMP packets for network analysis.
 
-🧠 Packet types observed in Wireshark:
+### 🧠 Packet types observed in Wireshark:
 ICMP
 
 Used for ping requests
