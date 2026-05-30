@@ -47,5 +47,30 @@ sudo ufw status
 ## 🧪 Optional System Monitoring
 
 ps aux
+---
+
+## Filesystem Navigation
+pwd
+ls
+ls -la
+cd /
+ls
+cd ~
+
+## System Resource Check
+df -h
+free -h
+
+## Process Monitoring
+ps aux | head
+top
+
+## Service Inspection
+systemctl status ssh
+systemctl list-units --type=service | head
+
+## Network Awareness
+ip a
+ss -tuln
 top
 htop
