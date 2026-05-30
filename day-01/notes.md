@@ -147,4 +147,66 @@ Even in a basic setup, system exposure begins at:
 - running services
 - network interfaces
 
+---
+
+## 🧠 System Understanding
+
+Focused on building system-level awareness in Linux by analyzing identity, filesystem, processes, services, and networking.
+
+---
+
+## 📁 Filesystem Structure
+
+Commands:
+- pwd
+- ls
+- ls -la
+- cd
+
+Key learning:
+- Linux uses a hierarchical filesystem
+- `/` is root directory
+- `/home` contains user data
+- hidden files start with `.`
+
+---
+
+## 💾 System Resources
+
+Commands:
+- df -h (disk usage)
+- free -h (memory usage)
+
+Insights:
+- disk usage shows storage health
+- memory usage shows system performance
+- available memory is more important than free memory in Linux
+
+---
+
+## ⚙️ Process Monitoring
+
+Commands:
+- ps aux
+- top
+
+Learning:
+- processes represent running programs
+- system continuously runs background services
+- resource usage helps identify system load
+
+---
+
+## 🔧 Service Management
+
+Command:
+- systemctl status ssh
+
+Insight:
+- Linux services run in background
+- SSH service must be active for remote access
+- systemctl controls service lifecycle
+
+---
+
 Understanding and controlling these is the foundation of cybersecurity engineering.
