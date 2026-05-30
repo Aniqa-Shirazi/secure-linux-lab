@@ -208,5 +208,35 @@ Insight:
 - systemctl controls service lifecycle
 
 ---
+🔥 7. FIREWALL (UFW)
+🔍 Check firewall status
+sudo ufw status
+🔓 Allow SSH
+sudo ufw allow ssh
+🔥 Enable firewall
+sudo ufw enable
+🔐 Security relevance:
+
+Blocks unauthorized network access.
+
+📡 8. WIRESHARK / NETWORK TRAFFIC
+🌐 Generate traffic
+ping -c 4 google.com
+✔ Purpose:
+
+Creates ICMP packets for network analysis.
+
+🧠 Packet types observed in Wireshark:
+ICMP
+
+Used for ping requests
+
+DNS
+
+Used for domain resolution
+
+TCP
+
+Used for communication sessions
 
 Understanding and controlling these is the foundation of cybersecurity engineering.
