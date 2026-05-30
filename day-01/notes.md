@@ -230,149 +230,115 @@ Creates ICMP packets for network analysis.
 ICMP: Used for ping requests
 DNS: Used for domain resolution
 TCP: Used for communication sessions
-# Linux Security Lab — Day 2 Commands Reference
+
+# Linux Security Lab — Day 2 Notes
 
 ## Objective
-Day 2 focuses on process management, system services, SSH usage, logging, and basic automation.
+Day 2 focuses on Linux system visibility, service management, logging, SSH usage, and automation using Bash.
 
 ---
 
 # PROCESS MANAGEMENT
 
-## View running processes
-ps
+Linux runs multiple processes simultaneously.
 
-Shows processes running in current shell.
+Tools:
+- ps
+- top
 
----
-
-## Detailed process list
-ps aux
-
-Displays all system processes with CPU and memory usage.
-
-Used for:
-- detecting suspicious processes
-- monitoring system load
-
----
-
-## Real-time process monitoring
-top
-
-Shows live CPU, memory, and process usage.
+These help identify:
+- system load
+- running services
+- abnormal processes
 
 ---
 
 # SYSTEM SERVICES
 
-## Check SSH service status
+Linux uses systemd to manage services.
+
+Command:
 systemctl status ssh
 
-Shows whether SSH service is active or inactive.
+SSH service enables remote system access.
 
 ---
 
-## Start SSH service
-sudo systemctl start ssh
+# SSH (SECURE SHELL)
+
+SSH is used for secure remote login.
+
+Key uses:
+- remote administration
+- secure command execution
+
+Security importance:
+- frequently targeted by attackers
+- must be monitored
 
 ---
 
-## Restart SSH service
-sudo systemctl restart ssh
+# NETWORKING BASICS
 
----
+IP Address identifies a machine in a network.
 
-## List all services
-systemctl list-units --type=service
+Ping checks connectivity.
 
----
-
-# SYSTEM UPDATES
-
-## Update package list
-sudo apt update
-
----
-
-## Upgrade system packages
-sudo apt upgrade -y
-
----
-
-# SSH NETWORK ACCESS
-
-## Check IP address
-ip a
-
-Shows system IP and network interfaces.
-
----
-
-## SSH login from host
-ssh username@IP_ADDRESS
-
-Used for remote secure access.
+DNS converts domain names into IP addresses.
 
 ---
 
 # SYSTEM MONITORING
 
-## Disk usage
-df -h
+Commands:
+- df -h → disk usage
+- free -h → memory usage
 
-Shows storage usage.
-
----
-
-## Memory usage
-free -h
-
-Shows RAM usage.
+Used to monitor system health and detect anomalies.
 
 ---
 
-# LOGGING
+# LOGGING SYSTEM
 
-## System logs
-journalctl -xe
+Linux stores logs for monitoring and troubleshooting.
 
-Shows system events and errors.
+Important logs:
+- /var/log/auth.log → login attempts
+- journalctl → system events
 
----
-
-## Authentication logs
-cat /var/log/auth.log
-
-Shows login attempts and security events.
+Logs are critical for:
+- incident response
+- forensic analysis
 
 ---
 
-# BASH SCRIPT EXECUTION
+# BASH AUTOMATION
 
-## Create script
-nano systeminfo.sh
+Bash scripts automate system tasks.
 
----
+Examples:
+- system reporting
+- backups
+- monitoring
 
-## Make executable
-chmod +x systeminfo.sh
-
----
-
-## Run script
-./systeminfo.sh
+Automation is essential in cybersecurity and DevSecOps.
 
 ---
 
-# NETWORK CHECK
+# SECURITY MINDSET
 
-## Ping test
-ping google.com
+Instead of only running commands, focus on system behavior:
+
+- what is running?
+- who is accessing system?
+- what services are active?
 
 ---
 
-## Network interfaces
-ip a
+# OUTCOME OF DAY 2
 
-Understanding and controlling these is the foundation of cybersecurity engineering.
+- process monitoring
+- service management
+- SSH understanding
+- log analysis basics
+- Bash scripting introduction
